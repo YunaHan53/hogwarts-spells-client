@@ -13,5 +13,46 @@
     </head>
     <body>
       <h1>Hogwarts Spells Client</h1>
+
+      <h4 id="message"></h4>
+
+      <form id="sign-up" class="homepage">
+        <fieldset>
+          <legend>Sign Up!</legend>
+          <input name="credentials[email]" type="email" placeholder="example@example.com">
+          <input name="credentials[password]" type="password" placeholder="password">
+          <input name="credentials[password_confirmation]" type="password" placeholder="confirm password">
+          <input type="submit" value="Sign Up!">
+        </fieldset>
+      </form>
+
+      <form id="sign-in" class="homepage">
+        <fieldset>
+          <legend>Sign In</legend>
+          <input name="credentials[email]" type="email" placeholder="example@example.com">
+          <input name="credentials[password]" type="password" placeholder="password">
+          <input type="submit" value="Sign In!">
+        </fieldset>
+      </form>
+
+      <!-- Buttons -->
+      <div id="buttons">
+        <form id="sign-out" class="button2">
+          <fieldset>
+            <input type="submit" value="Sign Out!">
+          </fieldset>
+        </form>
+      </div>
+
+      <br><br>
+
+      <!-- Change Password Form -->
+      <form id="change-password" class="passwordpage">
+        <legend>Change Password Here!</legend>
+        <input name="passwords[old]" type="password" placeholder="Old Password">
+        <input name="passwords[new]" type="password" placeholder="New Password">
+        <input type="submit" value="Change Password!">
+      </form>
+
     </body>
 </html>
