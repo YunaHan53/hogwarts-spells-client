@@ -3,6 +3,7 @@
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 const authEvents = require('./auth/events')
+const spellEvents = require('./spell/events')
 // use require without a reference to ensure a file is bundled
 // require('./example')
 
@@ -13,4 +14,8 @@ $(() => {
   $('#change-password').hide()
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#sign-out').hide()
+
+  $('#create-spell-button').hide()
+  $('#create-spell').hide()
+  $('#create-spell').on('submit', spellEvents.onCreateSpell)
 })

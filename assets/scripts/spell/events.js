@@ -3,19 +3,18 @@ const getFormFields = require('./../../../lib/get-form-fields')
 const api = require('./api')
 const ui = require('./ui')
 
-// Sign In function
-const onSignIn = function (event) {
+// Create Spell function
+const onCreateSpell = function (event) {
   event.preventDefault()
 
   const form = event.target
   const data = getFormFields(form)
-  // console.log(data)
 
-  api.signIn(data)
-    .then(ui.onSignInSuccess)
-    .catch(ui.onSignInFailure)
+  api.createSpell(data)
+    .then(ui.onCreateSpellSuccess)
+    .catch(ui.onCreateSpellFailure)
 }
 
 module.exports = {
-  onSignIn
+  onCreateSpell
 }
