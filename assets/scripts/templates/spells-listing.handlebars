@@ -1,0 +1,38 @@
+{{#each spells as |spell|}}
+  {{log spell}}
+  <section data-id="{{spell.id}}">
+    <h2>Title:</h2>
+    <h3>
+      {{limit spell.name 30}}
+    </h3>
+    <h6>Type:</h6>
+    <p>
+      {{#if spell.category}}
+        {{spell.category}}
+      {{else}}
+        No name provided.
+      {{/if}}
+    </p>
+    <h6>Description:</h6>
+    <p>
+      {{#if spell.description}}
+        {{spell.description}}
+      {{else}}
+        No name provided.
+      {{/if}}
+    </p>
+    <h6>Fatality:</h6>
+    <p>
+      {{#if spell.fatality}}
+        {{spell.fatality}}
+      {{else}}
+        unknown
+      {{/if}}
+    </p>
+    {{#if spell.editable}}
+    <button data-id='{{id}}' class="update-spell-button">Update</button>
+    <button data-id='{{id}}' class="btn btn-danger delete-button">Delete Me!</button>
+    {{else}}
+    {{/if}}
+  </section>
+{{/each}}

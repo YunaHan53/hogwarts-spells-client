@@ -39,9 +39,11 @@
       <div id="buttons">
         <button id="create-spell-button" class="button1">Create Spell</button>
         &nbsp;&nbsp;&nbsp;
-        <button id="password-button" class="button2">Change Password</button>
+        <button id="show-spell-button" class="button2">Show All Spells</button>
         &nbsp;&nbsp;&nbsp;
-        <form id="sign-out" class="button3">
+        <button id="password-button" class="button3">Change Password</button>
+        &nbsp;&nbsp;&nbsp;
+        <form id="sign-out" class="button4">
           <fieldset>
             <input type="submit" value="Sign Out!">
           </fieldset>
@@ -50,7 +52,7 @@
 
       <br><br>
 
-      <!-- Create Spells Form -->
+      <!-- Create Spell Form -->
       <form id="create-spell" class="spellpage">
         <legend>Create Your Spell</legend>
         <input name="spell[name]" type="text" placeholder="Spell Name">
@@ -60,6 +62,16 @@
         <input type="submit" value="Create Your Spell!">
       </form>
 
+      <!-- Update Spell Form -->
+      <form id="update-spell" class="spellpage">
+        <legend>Update Your Spell</legend>
+        <input name="spell[name]" type="text" placeholder="Spell Name">
+        <input name="spell[category]" type="text" placeholder="Type of Spell">
+        <input name="spell[description]" type="text" placeholder="Description">
+        <input name="spell[fatality]" type="text" placeholder="Deadly?">
+        <input type="submit" value="Update Your Spell!">
+      </form>
+
       <!-- Change Password Form -->
       <form id="change-password" class="passwordpage">
         <legend>Change Password Here!</legend>
@@ -67,6 +79,8 @@
         <input name="passwords[new]" type="password" placeholder="New Password">
         <input type="submit" value="Change Password!">
       </form>
+
+      <h4 id="spell-content"></h4>
 
     </body>
 </html>

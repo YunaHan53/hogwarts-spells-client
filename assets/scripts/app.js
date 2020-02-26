@@ -12,10 +12,20 @@ $(() => {
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#change-password').hide()
+  $('#password-button').hide()
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#sign-out').hide()
 
   $('#create-spell-button').hide()
   $('#create-spell').hide()
   $('#create-spell').on('submit', spellEvents.onCreateSpell)
+
+  $('#show-spell-button').hide()
+  $('#show-spell-button').on('click', spellEvents.onShowSpell)
+
+  $('#update-spell').hide()
+  $('#update-spell').on('submit', spellEvents.onUpdateSpell)
+
+  $('#spell-content').on('click', '.update-spell-button', spellEvents.onUpdateForm)
+  $('#spell-content').on('click', '.delete-button', spellEvents.onDeleteSpell)
 })
