@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Hogwarts World of Spells</title>
+      <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,7 +13,12 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Hogwarts Spells Client</h1>
+
+    <div class="container">
+
+      <h1>Hogwarts World of Spells</h1>
+
+      <img class="background" src="https://imgur.com/fKVxpvj.jpg" alt="background">
 
       <h4 id="message"></h4>
 
@@ -35,8 +41,9 @@
         </fieldset>
       </form>
 
+    <nav>
       <!-- Buttons -->
-      <div id="buttons">
+      <div id="buttons" class="navbar">
         <button id="create-spell-button" class="button1">Create Spell</button>
         &nbsp;&nbsp;&nbsp;
         <button id="show-spell-button" class="button2">Show All Spells</button>
@@ -49,6 +56,7 @@
           </fieldset>
         </form>
       </div>
+    </nav>
 
       <br><br>
 
@@ -73,14 +81,16 @@
       </form>
 
       <!-- Change Password Form -->
-      <form id="change-password" class="passwordpage">
+      <form id="change-password" class="spellpage">
         <legend>Change Password Here!</legend>
         <input name="passwords[old]" type="password" placeholder="Old Password">
         <input name="passwords[new]" type="password" placeholder="New Password">
         <input type="submit" value="Change Password!">
       </form>
 
-      <h4 id="spell-content"></h4>
+        <h4 id="spell-content" class="content"></h4>
+
+    </div>
 
     </body>
 </html>

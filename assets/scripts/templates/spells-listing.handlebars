@@ -1,7 +1,14 @@
 {{#each spells as |spell|}}
   {{log spell}}
+  <style>
+    body {
+        background-image:url({{background}});
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+  </style>
   <section data-id="{{spell.id}}">
-    <h2>Title:</h2>
+    <img src="https://imgur.com/LZGPSQA.jpg">
     <h3>
       {{limit spell.name 30}}
     </h3>

@@ -1,1 +1,89 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('https://i.imgur.com/f7Gave7.jpg') no-repeat center center fixed;
+  background-color: darken($blue, 90%);
+  background-size: cover;
+  font-family: 'Marck Script', Arial;
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
+}
+
+  section {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+    background: $white;
+    border: 1px solid;
+    cursor: pointer;
+    margin: -1px;
+    outline: none;
+    padding: 1rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .container {
+    text-align: center;
+
+    h1 {
+      border: 1px solid black;
+      background-color: lighten($black, 25%);
+      padding: 10px;
+      margin: 5px 0;
+      text-align: center;
+      color: #ffffff;
+    }
+    img {
+      padding: 5px;
+    }
+    form fieldset legend {
+      border: 1px solid black;
+      background-color: lighten($black, 25%);
+      color: #ffffff;
+    }
+    .spellpage {
+      background-color: lighten($black, 25%);
+      color: #ffffff;
+    }
+    nav div {
+      @extend .navbar;
+      @extend .navbar-dark;
+      @extend .bg-dark;
+    }
+  }
+
+#message {
+  background-color: lighten($black, 25%);
+  border: 0px solid black;
+  color: #ffffff;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.content {
+  @include make-row;
+
+  &:empty {
+    &::before {
+      color: $black;
+      font-size: 10vh;
+      line-height: .85;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  }

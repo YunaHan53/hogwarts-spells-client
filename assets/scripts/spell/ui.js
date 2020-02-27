@@ -48,7 +48,7 @@ $('#show-spell-button').click(function () {
 })
 
 const onShowSpellSuccess = function (data) {
-  console.log(data)
+  // console.log(data)
   const printSpells = showSpell({spells: data.spells})
   $('#spell-content').html(printSpells)
 }
