@@ -23,7 +23,6 @@ const onCreateSpellSuccess = function (response) {
   $('#message').text('New Spell Created!')
   $('#message').addClass('success-message')
   $('#create-spell').trigger('reset')
-  // store.data = response.spell
 }
 
 const onCreateSpellFailure = function (response) {
@@ -97,7 +96,7 @@ const onDeleteSpellSuccess = function (response) {
 const onDeleteSpellFailure = function (response) {
   $('#message').removeClass()
   $('#message').addClass('failure-message')
-  $('#message').text('You can\'t delete your book muahahahaha!')
+  $('#message').text('You can\'t delete your spell muahahahaha!')
 }
 
 module.exports = {
