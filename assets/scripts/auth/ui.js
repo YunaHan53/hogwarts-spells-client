@@ -4,7 +4,7 @@ const store = require('./../store')
 
 // Sign Up
 const onSignUpSuccess = function (response) {
-  console.log(response)
+  // console.log(response)
   $('#message').removeClass()
   $('#message').addClass('success-message')
   $('#message').text(response.user.email + ' successfully signed up!')
@@ -13,7 +13,7 @@ const onSignUpSuccess = function (response) {
 }
 
 const onSignUpFailure = function (response) {
-  console.log(response)
+  // console.log(response)
   $('#message').removeClass()
   $('#message').addClass('failure-message')
   $('#message').text('Failed to sign up')
