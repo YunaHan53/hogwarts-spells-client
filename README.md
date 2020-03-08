@@ -21,9 +21,11 @@ I started out doing the user auths first, and then creating my spells resource. 
 - As a basic user, I would like to be able to change password.
 - As a basic user, I would like to be able to sign out.
 - As a basic user, I would like to be able to see all the spells available.
-- As a moderate user, I would like to be able to add a spell to my favorites.
+- As a moderate user, I would like to be able to create my own spell.
 - As a moderate user, I would like to be able to update a spell description.
 - As a moderate user, I would like to be able to remove a spell.
+- As an advanced user, I would like to be able to add a spell to my favorites.
+
 
 ### Technologies Used
 
@@ -41,6 +43,16 @@ I started out doing the user auths first, and then creating my spells resource. 
 - Would like to eventually ....
   - Add a joins table to have a user be able to add a spell to their favorites.
 
+
+## Images
+
+---
+  ![](assets/images/LoadPage.png)
+  ![](assets/images/SignInSuccess.png)
+  ![](assets/images/CreateSpell.png)
+  ![](assets/images/ShowSpells.png)
+  ![](assets/images/ChangePassword.png)
+  ![](assets/images/SignOut.png)
 
 
 #### Wireframe:
