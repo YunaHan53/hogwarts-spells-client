@@ -16,6 +16,7 @@ const onCreateSpell = function (event) {
     .catch(ui.onCreateSpellFailure)
 }
 
+// Show Spell function
 const onShowSpell = function (event) {
   event.preventDefault()
 
@@ -24,6 +25,7 @@ const onShowSpell = function (event) {
     .catch(ui.onShowSpellFailure)
 }
 
+// Update Spell function
 const onUpdateSpell = function (event) {
   event.preventDefault()
 
@@ -46,6 +48,7 @@ const onUpdateForm = function (event) {
   // console.log(updateForm)
 }
 
+// Delete Spell function
 const onDeleteSpell = function (event) {
   event.preventDefault()
   const id = $(event.target).data('id')

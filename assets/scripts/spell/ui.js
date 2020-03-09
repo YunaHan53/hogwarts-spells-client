@@ -1,6 +1,5 @@
 'use strict'
 
-// const store = require('./../store')
 const showSpell = require('./../templates/spells-listing.handlebars')
 
 $('#create-spell-button').click(function () {
@@ -18,11 +17,12 @@ $('#create-spell-button').click(function () {
   $('#create-spell').show()
 })
 
-const onCreateSpellSuccess = function (response) {
+const onCreateSpellSuccess = function (data) {
   $('#message').removeClass()
   $('#message').text('New Spell Created!')
   $('#message').addClass('success-message')
   $('#create-spell').trigger('reset')
+  $('#spell-content').empty()
 }
 
 const onCreateSpellFailure = function (response) {
@@ -72,12 +72,12 @@ $('.update-spell-button').click(function () {
   $('#update-spell').show()
 })
 
-const onUpdateSpellSuccess = function (response) {
+const onUpdateSpellSuccess = function (data) {
   $('#message').removeClass()
   $('#message').text('Woohoo! Update Success!')
   $('#message').addClass('success-message')
   $('#update-spell').trigger('reset')
-  // store.data = response.spell
+  $('#spell-content').empty()
 }
 
 const onUpdateSpellFailure = function (response) {
@@ -87,10 +87,11 @@ const onUpdateSpellFailure = function (response) {
   $('#update-spell').trigger('reset')
 }
 
-const onDeleteSpellSuccess = function (response) {
+const onDeleteSpellSuccess = function (data) {
   $('#message').removeClass()
   $('#message').text('Deleted!')
   $('#message').addClass('success-message')
+  $('#spell-content').empty()
 }
 
 const onDeleteSpellFailure = function (response) {
