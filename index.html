@@ -63,27 +63,29 @@
       <!-- Create Spell Form -->
       <form id="create-spell" class="spellpage">
         <legend>Create Your Spell</legend>
-        <input name="spell[name]" type="text" placeholder="Spell Name">
-        <input name="spell[category]" type="text" placeholder="Type of Spell">
-        <input name="spell[description]" type="text" placeholder="Description">
-        <input name="spell[fatality]" type="text" placeholder="Deadly?">
+        <input name="spell[name]" type="text" placeholder="Spell Name" required>
+        <input name="spell[category]" type="text" placeholder="Type of Spell"required>
+        <input name="spell[description]" type="text" placeholder="Description" required>
+        <label for="spell[fatality]">Deadly?</label>
+        <input name="spell[fatality]" type="checkbox" placeholder="Deadly?">
         <input type="submit" value="Create Your Spell!">
       </form>
 
       <!-- Update Spell Form -->
       <form id="update-spell" class="spellpage">
         <legend>Update Your Spell</legend>
-        <input name="spell[name]" type="text" placeholder="Spell Name">
-        <input name="spell[category]" type="text" placeholder="Type of Spell">
-        <input name="spell[description]" type="text" placeholder="Description">
-        <input name="spell[fatality]" type="text" placeholder="Deadly?">
+        <input name="spell[name]" type="text" placeholder="Spell Name" required>
+        <input name="spell[category]" type="text" placeholder="Type of Spell" required>
+        <input name="spell[description]" type="text" placeholder="Description" required>
+        <label for="spell[fatality]">Deadly?</label>
+        <input name="spell[fatality]" type="checkbox" placeholder="Deadly?">
         <input type="submit" value="Update Your Spell!">
       </form>
 
       <!-- Change Password Form -->
       <form id="change-password" class="spellpage">
         <legend>Change Password Here!</legend>
-        <input name="passwords[old]" type="password" placeholder="Old Password">
+        <input name="passwords[old]" type="password" placeholder="Old Password" required>
         <input name="passwords[new]" type="password" placeholder="New Password">
         <input type="submit" value="Change Password!">
       </form>
