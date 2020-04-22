@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Hogwarts World of Spells</title>
+      <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+    <div class="container">
+
+      <h1>Hogwarts World of Spells <img src="https://i.imgur.com/7g0ZOLM.gif" alt="animated-wand" width=80px height=80px></h1>
+
+      <img class="background" src="https://imgur.com/fKVxpvj.jpg" alt="background">
+
+      <h4 id="message"></h4>
+
+      <form id="sign-up" class="homepage">
+        <fieldset>
+          <legend>Sign Up!</legend>
+          <input name="credentials[email]" type="email" placeholder="example@example.com">
+          <input name="credentials[password]" type="password" placeholder="password">
+          <input name="credentials[password_confirmation]" type="password" placeholder="confirm password">
+          <input type="submit" value="Sign Up!">
+        </fieldset>
+      </form>
+
+      <form id="sign-in" class="homepage">
+        <fieldset>
+          <legend>Sign In</legend>
+          <input name="credentials[email]" type="email" placeholder="example@example.com">
+          <input name="credentials[password]" type="password" placeholder="password">
+          <input type="submit" value="Sign In!">
+        </fieldset>
+      </form>
+
+    <nav>
+      <!-- Buttons -->
+      <div id="buttons" class="navbar">
+        <button id="create-spell-button" class="button1">Create Spell</button>
+        &nbsp;&nbsp;&nbsp;
+        <button id="show-spell-button" class="button2">Show All Spells</button>
+        &nbsp;&nbsp;&nbsp;
+        <button id="password-button" class="button3">Change Password</button>
+        &nbsp;&nbsp;&nbsp;
+        <form id="sign-out" class="button4">
+          <fieldset>
+            <input type="submit" value="Sign Out!">
+          </fieldset>
+        </form>
+      </div>
+    </nav>
+
+      <br><br>
+
+      <!-- Create Spell Form -->
+      <form id="create-spell" class="spellpage">
+        <legend>Create Your Spell</legend>
+        <input name="spell[name]" type="text" placeholder="Spell Name" required>
+        <input name="spell[category]" type="text" placeholder="Type of Spell"required>
+        <input name="spell[description]" type="text" placeholder="Description" required>
+        <label for="spell[fatality]">Deadly?</label>
+        <input name="spell[fatality]" type="checkbox" placeholder="Deadly?">
+        <input type="submit" value="Create Your Spell!">
+      </form>
+
+      <!-- Update Spell Form -->
+      <form id="update-spell" class="spellpage">
+        <legend>Update Your Spell</legend>
+        <input name="spell[name]" type="text" placeholder="Spell Name" required>
+        <input name="spell[category]" type="text" placeholder="Type of Spell" required>
+        <input name="spell[description]" type="text" placeholder="Description" required>
+        <label for="spell[fatality]">Deadly?</label>
+        <input name="spell[fatality]" type="checkbox" placeholder="Deadly?">
+        <input type="submit" value="Update Your Spell!">
+      </form>
+
+      <!-- Change Password Form -->
+      <form id="change-password" class="spellpage">
+        <legend>Change Password Here!</legend>
+        <input name="passwords[old]" type="password" placeholder="Old Password" required>
+        <input name="passwords[new]" type="password" placeholder="New Password">
+        <input type="submit" value="Change Password!">
+      </form>
+
+        <h4 id="spell-content" class="content"></h4>
+
+    </div>
+
+    </body>
+</html>
